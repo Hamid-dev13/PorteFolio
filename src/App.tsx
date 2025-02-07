@@ -8,8 +8,9 @@ const skills = [
   { name: 'TypeScript', icon: <Code2 className="w-6 h-6" />, category: 'DÉVELOPPEMENT' },
   { name: 'PHP', icon: <FileCode className="w-6 h-6" />, category: 'BACKEND' },
   { name: 'Nodejs', icon: <Code2 className="w-6 h-6" />, category: 'BACKEND' },
+  { name: 'Docker', icon: <Code2 className="w-6 h-6" />, category: 'DÉVELOPPEMENT' },
   { name: 'MySQL', icon: <Database className="w-6 h-6" />, category: 'DATABASE' },
-  { name: 'PostgreSql', icon: <Database className="w-6 h-6" />, category: 'DATABASE' },
+
   { name: 'MongoDB', icon: <Database className="w-6 h-6" />, category: 'DATABASE' },
 ];
 
@@ -46,14 +47,14 @@ const education = [
     institution: 'Epitech',
     period: '2024 - 2027',
     location: "Marseille",
-    description: 'Formation diplômante en Bac+5, programmation informatique',
+    description: 'Formation diplômante en Bac+5, programmation informatique.',
   },
   {
     title: 'Sound design',
     institution: 'Acfa multimédia',
     location: "Montpellier",
     period: '2020 - 2022',
-    description: 'Formation de Sound design',
+    description: 'Formation de Sound design.',
   }
 ];
 
@@ -61,7 +62,7 @@ const experience = [
   {
     title: 'Electricien',
     company: 'Jenko',
-    period: '2024 - 2024',
+    period: '2023 - 2024',
     description: "Apprenti éléctricien dans une entreprise de fabrication d'armoire et de coffret éléctrique industriel.",
     location: "Marseille"
   },
@@ -175,7 +176,7 @@ function App() {
           </p>
 
           <a
-            href="/mon-cv.pdf"
+            href="/HamidBennacefCV.pdf"
             download
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-all hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] text-sm inline-block"
           >
@@ -213,12 +214,12 @@ function App() {
             <Globe className="mr-2 text-blue-500" />
             Projets
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
             {projects.map((project) => (
               <a
                 key={project.title}
                 href={project.link}
-                className="block bg-gray-900 rounded-lg overflow-hidden hover:shadow-[0_0_30px_rgba(0,0,0,0.5)] transition-all hover:-translate-y-1"
+                className="block bg-gray-900 rounded-lg overflow-hidden hover:shadow-[0_0_30px_rgba(0,0,0,0.5)] transition-all hover:-translate-y-1 cursor-default "
               >
                 <img
                   src={project.image}
