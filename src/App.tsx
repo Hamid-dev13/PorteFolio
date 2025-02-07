@@ -277,7 +277,7 @@ function App() {
         <section className="mb-16">
           <h2 className="text-2xl font-bold mb-8 flex items-center">
             <Briefcase className="mr-2 text-blue-500" />
-            Expérience Professionnelle
+            Expériences Professionnelles
           </h2>
           <div className="space-y-6">
             {experience.map((item) => (
