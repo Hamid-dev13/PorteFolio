@@ -6,39 +6,41 @@ const skills = [
   { name: 'React', icon: <FileJson className="w-6 h-6" />, category: 'DÉVELOPPEMENT' },
   { name: 'NextJs', icon: <Braces className="w-6 h-6" />, category: 'DÉVELOPPEMENT' },
   { name: 'TypeScript', icon: <Code2 className="w-6 h-6" />, category: 'DÉVELOPPEMENT' },
+  { name: 'Tailwind', icon: <Code2 className="w-6 h-6" />, category: 'DÉVELOPPEMENT' },
   { name: 'PHP', icon: <FileCode className="w-6 h-6" />, category: 'BACKEND' },
   { name: 'Nodejs', icon: <Code2 className="w-6 h-6" />, category: 'BACKEND' },
   { name: 'Docker', icon: <Code2 className="w-6 h-6" />, category: 'DÉVELOPPEMENT' },
   { name: 'MySQL', icon: <Database className="w-6 h-6" />, category: 'DATABASE' },
-
+  { name: 'PostgreSql', icon: <Database className="w-6 h-6" />, category: 'DATABASE' },
   { name: 'MongoDB', icon: <Database className="w-6 h-6" />, category: 'DATABASE' },
 ];
 
 const projects = [
   {
-    title: 'Job Board',
-    category: 'DÉVELOPPEMENT FULL STACK • PHP / MYSQL',
-    description: "Développement d'un site d'annonces d'emploi, interface utilisateur, panneau d'administration, frontend, backend.",
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop',
-    tags: ['HTML/CSS/Javascript', 'PHP', 'MySQL'],
-    link: '#',
+    title: 'FreelanceFlow',
+    category: 'DÉVELOPPEMENT FULL STACK • REACT / NODE.JS',
+    description: 'Application weApplication web pensée pour les freelances, permettant de stocker les clients et les différentes missions associées à ces derniers. Authentification utilisateur, interface dynamique, dashboard, communication en temps réel avec une base de données PostgreSQL.sb pour les freelances, gestion de clients et missions, interface dynamique avec base de données MySQL.',
+    image: 'https://images.unsplash.com/photo-1460472178825-e5240623afd5?w=500&h=300&fit=crop',
+    tags: ['React', 'Nextjs', 'MySQL'],
+    link: 'https://freelance-flow-theta.vercel.app/'
   },
   {
     title: 'Internet Relay Chat',
     category: 'DÉVELOPPEMENT BACKEND • TYPESCRIPT / WEBSOCKET',
-    description: 'Application web de chat instantané, dynamique, permettant à plusieurs utilisateurs de communiquer en temps réel.',
+    description: 'Application web de chat instanApplication web de chat instantané, dynamique, permettant à plusieurs utilisateurs de communiquer en temps réel. Solution complète intégrant un front-end moderne et un back-end robuste. Implémentation de fonctionnalités avancées telles que la messagerie privée, les notifications et la gestion des utilisateurs.tané, dynamique, permettant à plusieurs utilisateurs de communiquer en temps réel.',
     image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=500&h=300&fit=crop',
     tags: ['React', 'Node.js', 'WebSocket'],
     link: '#'
   },
   {
-    title: 'FreelanceFlow',
-    category: 'DÉVELOPPEMENT FULL STACK • REACT / NODE.JS',
-    description: 'Application web pour les freelances, gestion de clients et missions, interface dynamique avec base de données MySQL.',
-    image: 'https://images.unsplash.com/photo-1460472178825-e5240623afd5?w=500&h=300&fit=crop',
-    tags: ['React', 'Nextjs', 'MySQL'],
-    link: '#'
+    title: 'Job Board',
+    category: 'DÉVELOPPEMENT FULL STACK • PHP / MYSQL',
+    description: "DéveloppDéveloppement d'un site d'annonces d'emploi, interface dynamique proposant des offres d'emploi. Interface utilisateur, interface d'administration, développement frontend et backend complets. Système de recherche et de filtrage avancé des offres d'emploi.ement d'un site d'annonces d'emploi, interface utilisateur, panneau d'administration, frontend, backend.",
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop',
+    tags: ['HTML/CSS/Javascript', 'PHP', 'MySQL'],
+    link: '#',
   }
+
 ];
 
 const education = [
@@ -47,14 +49,14 @@ const education = [
     institution: 'Epitech',
     period: '2024 - 2027',
     location: "Marseille",
-    description: 'Formation diplômante en Bac+5, programmation informatique.',
+    description: "Formation Bac+5 en informatique proposant une étude globale de la programmation. Choix de spécialisation en deuxième année, permettant aux étudiants de développer des compétences techniques pointues dans un domaine spécifique de l'informatique.",
   },
   {
     title: 'Sound design',
     institution: 'Acfa multimédia',
     location: "Montpellier",
     period: '2020 - 2022',
-    description: 'Formation de Sound design.',
+    description: 'Formation professionnelle en sound design couvrant les techniques de création sonore pour différents médias. Apprentissage des logiciels de montage audio.',
   }
 ];
 
@@ -63,14 +65,14 @@ const experience = [
     title: 'Electricien',
     company: 'Jenko',
     period: '2023 - 2024',
-    description: "Apprenti éléctricien dans une entreprise de fabrication d'armoire et de coffret éléctrique industriel.",
+    description: "Apprenti éléctricien dans uApprenti électricien dans une entreprise de fabrication d'armoire et de coffret électrique industriel. Participation à la réalisation de systèmes électriques complexes, apprentissage des techniques de câblage et de montage de tableaux électriques. Développement de compétences techniques dans le domaine de l'électricité industrielle et mise en pratique des connaissances théoriques.ne entreprise de fabrication d'armoire et de coffret éléctrique industriel.",
     location: "Marseille"
   },
   {
     title: 'Sound designer',
     company: 'Loft ton studio',
     period: '2022 - 2022',
-    description: "Sound designer stagiaire dans une entreprise spécialisé dans l'audio visuel",
+    description: "Sound designer stagiaire dans une entreprise de sound design spécialisé dans l'audiovisuel du cinéma et de la publicité. Participation à la création et au montage sonore de projets cinématographiques et publicitaires. Apprentissage des techniques de bruitage, mixage et post-production audio, utilisation de logiciels professionnels de traitement sonore.",
     location: "Hambourg"
   }
 ];
@@ -214,12 +216,11 @@ function App() {
             <Globe className="mr-2 text-blue-500" />
             Projets
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {projects.map((project) => (
-              <a
+              <div
                 key={project.title}
-                href={project.link}
-                className="block bg-gray-900 rounded-lg overflow-hidden hover:shadow-[0_0_30px_rgba(0,0,0,0.5)] transition-all hover:-translate-y-1 cursor-default "
+                className="block bg-gray-900 rounded-lg overflow-hidden hover:shadow-[0_0_10px_rgba(0,0,0,0.3)] transition-all hover:-translate-y-1"
               >
                 <img
                   src={project.image}
@@ -232,15 +233,25 @@ function App() {
                   <p className="text-gray-400 mb-4">
                     {project.description}
                   </p>
-                  <div className="flex gap-2 flex-wrap">
+                  <div className="flex gap-2 flex-wrap mb-4">
                     {project.tags.map((tag) => (
                       <span key={tag} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
                         {tag}
                       </span>
                     ))}
                   </div>
+                  {project.title === 'FreelanceFlow' && project.link !== '#' && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-all hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] text-sm"
+                    >
+                      Voir le projet
+                    </a>
+                  )}
                 </div>
-              </a>
+              </div>
             ))}
           </div>
         </section>
@@ -255,7 +266,7 @@ function App() {
             {education.map((item) => (
               <div
                 key={item.title}
-                className="bg-gray-900 rounded-lg p-6 hover:shadow-[0_0_30px_rgba(0,0,0,0.5)] transition-all hover:-translate-y-1"
+                className="bg-gray-900 rounded-lg p-6 hover:shadow-[0_0_10px_rgba(0,0,0,0.3)] transition-all hover:-translate-y-1"
               >
                 <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                 <div className="flex flex-wrap items-center gap-2 text-sm text-blue-500 mb-3">
@@ -283,7 +294,7 @@ function App() {
             {experience.map((item) => (
               <div
                 key={item.title}
-                className="bg-gray-900 rounded-lg p-6 hover:shadow-[0_0_30px_rgba(0,0,0,0.5)] transition-all hover:-translate-y-1"
+                className="bg-gray-900 rounded-lg p-6 hover:shadow-[0_0_10px_rgba(0,0,0,0.3)] transition-all hover:-translate-y-1"
               >
                 <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                 <div className="flex flex-wrap items-center gap-2 text-sm text-blue-500 mb-3">
