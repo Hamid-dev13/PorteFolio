@@ -35,7 +35,7 @@ const projects = [
   {
     title: 'Job Board',
     category: 'DÉVELOPPEMENT FULL STACK • PHP / MYSQL',
-    description: "Développement d'un site d'annonces d'emploi, interface dynamique proposant des offres d'emploi. Interface utilisateur, interface d'administration, développement frontend et backend complets. Système de recherche et de filtrage avancé des offres d'emploi.ement d'un site d'annonces d'emploi, interface utilisateur, panneau d'administration, frontend, backend.",
+    description: "Développement d'un site d'annonces d'emploi, interface dynamique proposant des offres d'emploi. Interface utilisateur, interface d'administration, développement frontend et backend complet. Système de recherche et de filtrage avancé des offres d'emploi.ement d'un site d'annonces d'emploi, interface utilisateur, panneau d'administration, frontend, backend.",
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop',
     tags: ['HTML/CSS/Javascript', 'PHP', 'MySQL'],
     link: '#',
