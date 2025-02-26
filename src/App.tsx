@@ -19,7 +19,7 @@ const projects = [
   {
     title: 'FreelanceFlow',
     category: 'DÉVELOPPEMENT FULL STACK • REACT / NODE.JS',
-    description: 'Application web pensée pour les freelances, permettant de stocker les clients et les différentes missions associées à ces derniers. Authentification utilisateur, interface dynamique, dashboard, communication en temps réel avec une base de données PostgreSQL.sb pour les freelances, gestion de clients et missions, interface dynamique avec base de données MySQL.',
+    description: 'Application web pensée pour les freelances, permettant de stocker les clients et les différentes missions associées à ces derniers. Authentification utilisateur, interface dynamique, dashboard, communication en temps réel avec une base de données PostgreSQL..',
     image: 'https://images.unsplash.com/photo-1460472178825-e5240623afd5?w=500&h=300&fit=crop',
     tags: ['React', 'Nextjs', 'MySQL'],
     link: 'https://freelance-flow-theta.vercel.app/'
